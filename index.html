@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <title>project</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+         <!-- nav bar -->
+        
+        <nav class="navbar navbar-expand-lg navbar-light d-block fixed-top nav">
+            <div class="container-fluid">
+              <img src="./photos/rb_156428.png" alt="" class="logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 " style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle border border-2 rounded-3 border-secondary text-light  category col-lg-12 col-3" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      category
+                    </a>
+                    <ul class="dropdown-menu drop" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">shirts</a></li>
+                      <li><a class="dropdown-item" href="#">skirts</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#">jeans</a></li>
+                      <li><a class="dropdown-item" href="#">jackets</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">about</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2 mt-2 border-1 border-dark " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark mt-2 " type="submit">Search</button>
+                  <!-- <button class="btn btn-outline-dark login mt-2" type="submit">login</button> -->
+                  <button type="button" class="btn btn-outline-dark login mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">login</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        
+          <!-- ////////////////////////////////////////////////////////////////////////// -->
+        
+        
+          <!-- modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " id="exampleModalLabel">login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Email address:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Password:</label>
+                    <!-- <textarea class="form-control" id="message-text"></textarea> -->
+                    <input type="password" class="form-control" id="message-text">
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">remember me</label>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-login">login</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////// -->
+        <div class="logos ">
+          <ul class="logos-ul " >
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+          </div>
+
+        <!-- caroursel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active " data-bs-interval="10000">
+                <img src="./photos/still-life-with-classic-shirts-hanger.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5 class="color">First slide label</h5>
+                  <p class="color">Some representative placeholder content for the first slide.</p>
+                  <button class="btn btn-outline-secondary text-light border-2">more</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./photos/shirt-mockup-concept-with-plain-clothing.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5 class="text-light">Second slide label</h5>
+                  <p class="text-light">Some representative placeholder content for the second slide.</p>
+                  <button class="btn btn-outline-secondary text-light border-2">more</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./photos/shop-clothing-clothes-shop-hanger-modern-shop-boutique.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5 class="text-light">Third slide label</h5>
+                  <p class="text-light">Some representative placeholder content for the third slide.</p>
+                  <button class="btn btn-outline-secondary text-light border-2">more</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+          </div>
+
+          <!-- welcome -->
+
+          <div class="mt-4 p-5  text-dark  rounded welcome">
+            <h1>WELCOME </h1>
+            <p>welcome to our site we hope to find what you looking for , are you planning to visit our location ?</p>
+            <button class="btn btn-outline-secondary  border-2" style="width: 120px; height: 40px; ">learn more</button>
+            
+          </div>
+          
+
+          <!-- accordion -->
+
+          <div class="accordion accordion-flush mt-3 " id="accordionFlushExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header">
+                <button class="accordion-button   collapsed accordion-color" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  round shirts
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The finest types and materials of T-shirts, in a variety of beautiful colours</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-color" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  jeans
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Various shapes and sizes for men and women in all colors</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion-color" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  jackets
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">All degrees of warmth and materials imported from abroad, and there are children’s sizes</div>
+              </div>
+            </div>
+          </div>
+          <!--size -->
+           <hr>
+          <div class="mt-4 p-5  text-dark text-center h-5  rounded translate">
+            <h1>Get 10% discount</h1>
+            
+          </div>
+
+          <div class="mt-1 p-5  text-dark  rounded-2 welcome">
+            <h4>write your size</h4>
+            <button class="btn btn-outline-secondary text-center border-2 btn-pop" style="width: 80px; height: 40px; " data-bs-toggle="tooltip"  data-bs-placement="bottom" title="copy to clipboar">
+              copy
+            </button>
+            
+            <div class="form-floating mt-3">
+              
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">size:</label>
+            </div>
+            
+          </div>
+
+          <hr>
+          <!-- img -->
+           <div class="div-img">
+           </div>
+
+
+           <div class="mt-1 p-5  text-dark text-center h-5  rounded popular">
+            <h1> popular items</h1>
+            
+          </div>
+
+          <!-- cards -->
+          <div class="container-lg mt-5 ">
+            <div class="row ">
+              <div class="col col-lg-4 col-md-4 col-sm-6 col-12 my-1  cardss cards-row">
+                <div class="card w-100 " style="width: 18rem;">
+                  <img src="./photos/cargo.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">cargo</h5>
+                    <p class="card-text">The most popular type in the pants section</p>
+                    <button class="btn btn-outline-secondary  border-2" style="width: 90px; height: 40px; ">check</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col col-lg-4 col-md-4 col-sm-6 col-12 my-1 cardss cards-row">
+                <div class="card w-100" style="width: 18rem;">
+                  <img src="./photos/shirtss.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Plain T-shirt</h5>
+                    <p class="card-text">All colors are available and 100% cotton.</p>
+                    <button class="btn btn-outline-secondary  border-2" style="width: 90px; height: 40px; ">check</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col col-lg-4 col-md-4 col-sm-6 col-12 my-1  cardss cards-row">
+                <div class="card w-100" style="width: 18rem;">
+                  <img src="./photos/jacket.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> jacket</h5>
+                    <p class="card-text">double face jacket All sizes are available</p>
+                    <button class="btn btn-outline-secondary  border-2" style="width: 90px; height: 40px; ">check</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="div-img2 mt-5">
+
+          </div>
+          <hr>
+          <!-- thanks -->
+
+          <div class="mt-4 p-5  text-dark text-center h-5  rounded popular">
+            <h1> THANKS FOR</h1>
+            
+          </div>
+
+          <!-- all thanks -->
+           
+          <div class="my-photo mt-4">
+            <div class="overlay">
+              <div class="content1">
+                <p>all thanks and appreciation</p>
+                <h6><i class="fa-regular fa-clock"></i> november 2,2024</h6>
+              </div>
+              <div class="content2">
+                <img src="./photos/WhatsApp Image 2024-05-13 at 01.47.06_add2e969.jpg" alt="" class="img1">
+                <p>Eng.omar atef ali </p>
+                <p class="p2">web developer</p>
+              </div>
+
+            </div>
+
+          </div>
+          <br>
+          <br>
+          <hr>
+
+          <!-- trend -->
+           <h1 class="h-trend text-center mt-4">trend news</h1>
+          <div class="trend  col col-12 overflow-hidden   mx-auto mt-5">
+            <div class="trend-content ">
+              <h1 class="mx-5 mt-4">cargo bants</h1>
+              <p class="mx-5 ">sun,November 3,2024</p>
+              <hr>
+              <p class="mx-5 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni earum explicabo hic, assumenda delectus ex vel illum ullam, esse adipisci repudiandae tenetur maiores quam nisi rem eos accusamus, quas quis!</p>
+              <button type="button" class="btn btn-secondary btn-sm "><i class="fa-brands fa-shoelace"></i> show style</button>
+            </div>
+            <div class="trend-img">
+
+            </div>
+            
+
+          </div>
+          <div class="trend2 mx-auto  overflow-hidden ">
+            
+            <div class="trend-img2">
+
+            </div>
+            <div class="trend-content ">
+              <h1 class="mx-5 mt-4">oversize shirts</h1>
+              <p class="mx-5 ">sun,November 3,2024</p>
+              <hr>
+              <p class="mx-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni earum explicabo hic, assumenda delectus ex vel illum ullam, esse adipisci repudiandae tenetur maiores quam nisi rem eos accusamus, quas quis!</p>
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-brands fa-shoelace"></i> show style</button>
+            </div>
+            
+
+          </div>
+
+          <div class="trend mx-auto trend3  overflow-hidden ">
+            <div class="trend-content">
+              <h1 class="mx-5 mt-4">cargo bants</h1>
+              <p class="mx-5 ">sun,November 3,2024</p>
+              <hr>
+              <p class="mx-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni earum explicabo hic, assumenda delectus ex vel illum ullam, esse adipisci repudiandae tenetur maiores quam nisi rem eos accusamus, quas quis!</p>
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-brands fa-shoelace"></i> show style</button>
+            </div>
+            <div class="trend-img3">
+
+            </div>
+            
+
+          </div>
+
+          <!-- join -->
+          <h1 class="h-join text-center">join us</h1>
+
+          <div class=" join row mx-auto">
+            <div class=" col-lg-3 col-md-6 col-12 my-sm-2">
+              <div class="join1 join-all">
+
+                <h3 class="mt-2 joinn">contact</h3>
+                <i class="fa-brands fa-whatsapp join-logo"></i>
+                <h3 class="go joinn"><a href="" class="text-dark">go to link</a></h3>
+              </div>
+              
+            </div>
+            
+            <div class="  col-lg-3 col-md-6 col-12 my-2">
+              <div class="join2 join-all">
+                <h3 class="mt-2 joinn">subscribe</h3>
+                <i class="fa-brands fa-twitter join-logo"></i>
+                <h3 class="go joinn"><a href="" class="text-dark">go to link</a></h3>
+              </div>
+              
+            </div>
+            <div class="  col-lg-3 col-md-6 col-12 my-2">
+              <div class="join3 join-all">
+                <h3 class="mt-2 joinn">like</h3>
+                <i class="fa-brands fa-linkedin-in join-logo"></i>
+                <h3 class="go joinn"><a href="" class="text-dark">go to link</a></h3>
+              </div>
+              
+            </div>
+            <div class="  col-lg-3 col-md-6 col-12 my-2">
+              <div class="join4 join-all">
+                <h3 class="mt-2 joinn">follow</h3>
+                <i class="fa-brands fa-instagram join-logo"></i><h3 class="go joinn">
+                <a href="" class="text-dark">go to link</a></h3>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- footer -->
+          
+          <div class="footer row  mt-4">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="block1">
+                <hr class=" hr1">
+                <img class="img" src="./photos/rb_156428.png" alt=""><span class="span">Good Company</span>
+                <hr class=" hr1">
+                <p>Tel: 000-000-000</p>
+                <p>Address: EGYPT</p>
+                <p>Fax: 000-000-000</p>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="block2">
+
+                <hr class=" hr1">
+                <img class="img" src="./photos/rb_156428.png" alt=""><span class="span">Important links</span>
+                
+                <hr class=" hr1">
+                <p><a href="">visit us</a></p>
+                <p><a href="">take alook</a></p>
+                <p><a href="">your mood is important</a></p>
+
+              </div>
+              
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="block3">
+                <hr class=" hr1">
+                <img class="img" src="./photos/rb_156428.png" alt=""><span class="span">vision</span>
+                <hr class=" hr1">
+                <p>servecies for all</p>
+                <p>provide best servecies</p>
+                <p>you will bo better</p>
+              </div>
+              
+            </div>
+            <hr>
+            <div class="block4">
+              <h3>COPYRIGHT&copy;2024 OMAR ATEF ALI ELBADRY. ALL RIGHTS</h3>
+
+            </div>
+              
+            
+
+          </div>
+          
+            
+         
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
